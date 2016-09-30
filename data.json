@@ -1,0 +1,256 @@
+{
+	"appData" : [
+		{
+			"title" : "Angry Birds",
+			"stats": [
+				{
+					"date" : "13-10-15",
+					"ios" : {
+						"imps" : 820,
+						"clicks" : 220
+					},
+					"android" : {
+						"imps" : 420,
+						"clicks" : 110
+					}
+				},
+				{
+					"date" : "14-10-15",
+					"ios" : {
+						"imps" : 505,
+						"clicks" : 300
+					},
+					"android" : {
+						"imps" : 300,
+						"clicks" : 212
+					}
+				},
+				{
+					"date" : "15-10-15",
+					"ios" : {
+						"imps" : 600,
+						"clicks" : 410
+					},
+					"android" : {
+						"imps" : 450,
+						"clicks" : 400
+					}
+				},
+				{
+					"date" : "16-10-15",
+					"ios" : {
+						"imps" : 975,
+						"clicks" : 480
+					},
+					"android" : {
+						"imps" : 600,
+						"clicks" : 620
+					}
+				},
+				{
+					"date" : "17-10-15",
+					"ios" : {
+						"imps" : 590,
+						"clicks" : 380
+					},
+					"android" : {
+						"imps" : 620,
+						"clicks" : 540
+					}
+				},
+				{
+					"date" : "18-10-15",
+					"ios" : {
+						"imps" : 510,
+						"clicks" : 400
+					},
+					"android" : {
+						"imps" : 800,
+						"clicks" : 630
+					}
+				},
+				{
+					"date" : "19-10-15",
+					"ios" : {
+						"imps" : 820,
+						"clicks" : 550
+					},
+					"android" : {
+						"imps" : 920,
+						"clicks" : 740
+					}
+				},
+				{
+					"date" : "20-10-15",
+					"ios" : {
+						"imps" : 400,
+						"clicks" : 600
+					},
+					"android" : {
+						"imps" : 930,
+						"clicks" : 820
+					}
+				},
+				{
+					"date" : "21-10-15",
+					"ios" : {
+						"imps" : 510,
+						"clicks" : 400
+					},
+					"android" : {
+						"imps" : 800,
+						"clicks" : 630
+					}
+				},
+				{
+					"date" : "22-10-15",
+					"ios" : {
+						"imps" : 820,
+						"clicks" : 550
+					},
+					"android" : {
+						"imps" : 920,
+						"clicks" : 740
+					}
+				},
+				{
+					"date" : "23-10-15",
+					"ios" : {
+						"imps" : 400,
+						"clicks" : 600
+					},
+					"android" : {
+						"imps" : 930,
+						"clicks" : 820
+					}
+				}
+			]
+		},
+		{
+			"title" : "Monument Valley",
+			"stats": [
+				{
+					"date" : "13-10-15",
+					"android" : {
+						"imps" : 820,
+						"clicks" : 220
+					},
+					"ios" : {
+						"imps" : 420,
+						"clicks" : 110
+					}
+				},
+				{
+					"date" : "14-10-15",
+					"android" : {
+						"imps" : 505,
+						"clicks" : 300
+					},
+					"ios" : {
+						"imps" : 300,
+						"clicks" : 212
+					}
+				},
+				{
+					"date" : "15-10-15",
+					"android" : {
+						"imps" : 600,
+						"clicks" : 410
+					},
+					"ios" : {
+						"imps" : 450,
+						"clicks" : 400
+					}
+				},
+				{
+					"date" : "16-10-15",
+					"android" : {
+						"imps" : 500,
+						"clicks" : 480
+					},
+					"ios" : {
+						"imps" : 600,
+						"clicks" : 620
+					}
+				},
+				{
+					"date" : "17-10-15",
+					"android" : {
+						"imps" : 590,
+						"clicks" : 380
+					},
+					"ios" : {
+						"imps" : 620,
+						"clicks" : 540
+					}
+				},
+				{
+					"date" : "18-10-15",
+					"android" : {
+						"imps" : 510,
+						"clicks" : 400
+					},
+					"ios" : {
+						"imps" : 800,
+						"clicks" : 630
+					}
+				},
+				{
+					"date" : "19-10-15",
+					"android" : {
+						"imps" : 820,
+						"clicks" : 550
+					},
+					"ios" : {
+						"imps" : 920,
+						"clicks" : 740
+					}
+				},
+				{
+					"date" : "20-10-15",
+					"android" : {
+						"imps" : 400,
+						"clicks" : 600
+					},
+					"ios" : {
+						"imps" : 930,
+						"clicks" : 820
+					}
+				},
+				{
+					"date" : "21-10-15",
+					"ios" : {
+						"imps" : 510,
+						"clicks" : 300
+					},
+					"android" : {
+						"imps" : 800,
+						"clicks" : 530
+					}
+				},
+				{
+					"date" : "22-10-15",
+					"ios" : {
+						"imps" : 820,
+						"clicks" : 550
+					},
+					"android" : {
+						"imps" : 920,
+						"clicks" : 740
+					}
+				},
+				{
+					"date" : "23-10-15",
+					"ios" : {
+						"imps" : 300,
+						"clicks" : 400
+					},
+					"android" : {
+						"imps" : 530,
+						"clicks" : 320
+					}
+				}
+			]
+		}
+	]
+}	

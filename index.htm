@@ -1,0 +1,102 @@
+<html>
+
+<head>
+	<title> Xwerx Data Visualization </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+</head>
+
+<body ng-app="" ng-controller="dataCtrl">
+
+	<header>
+	<div id="headerControls">
+
+		<button ng-click="selected.os = 'ios'; updateData();"
+				ng-class="(selected.os === 'ios') ? 'active' : 'inactive';">iOs</button>
+		<button ng-click="selected.os = 'android'; updateData();"
+				ng-class="(selected.os === 'android') ? 'active' : 'inactive';">Android</button>
+
+		<select id="appSelect"
+				ng-model="appSelect"
+				ng-options="x.title for x in data"
+				ng-change="selected.app = appSelect.title; updateData();">
+		</select>
+		<div class="customIcon"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+
+		<select id="statsSelect">
+			<option value="ads">Advertising</option>
+		</select>
+		<div class="customIcon"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+
+		<select id="dateSelect"
+				ng-model="dateSelect"
+				ng-options="x.value for x in dropdownDates"
+				ng-change="selected.date = dateSelect.value.substr(0, 8); updateData();">
+		</select>
+		<div class="calenderIcon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+
+	</div>
+	</header>
+
+	<div id="container">
+		<div id="vertLabels">
+				<span>1000</span> <br />
+				<span>800</span> <br />
+				<span>500</span> <br />
+				<span>300</span> <br />
+		</div>
+		<div id="graph">
+			<h2>Summary Chart</h2>
+			<div id="legend">
+				<div id="blueBlock"></div><span>Impressions</span>
+				<div id="redBlock"></div><span>Clicks</span>
+			</div>
+
+			<div class="popup" ng-repeat="p in currentData.stats" ng-style="setPopup(p, 'imp')">
+				<div class="arrow"></div>
+				<div class="popupBox">
+					{{ p.imps }} Impressions<br />
+					{{ p.date.substr(0, 6) }}
+				</div>
+			</div>
+			<div class="popup" ng-repeat="p in currentData.stats" ng-style="setPopup(p, 'click')">
+				<div class="arrow"></div>
+				<div class="popupBox">
+					{{ p.clicks }} Clicks<br />
+					{{ p.date.substr(0, 6) }}
+				</div>	
+			</div>
+
+			<canvas id="graphBg"></canvas>
+
+			<div id="horzLabels">
+				<span ng-repeat="s in currentData.stats">{{ s.date }}</span>
+			</div>
+		</div>
+
+		<div id="sidebar">
+			<div>
+				<span class="summaryData">{{ currentData.totalImps }}</span>
+				<br/>
+				<span class="summaryLabel">Impressions</span>
+			</div>
+			<div>
+				<span class="summaryData">{{ currentData.totalClicks }}</span>
+				<br/>
+				<span class="summaryLabel">Clicks</span>
+			</div>
+			<div>
+				<span class="summaryData">{{ currentData.ctr }} 	%</span>
+				<br/>
+				<span class="summaryLabel">CTR</span>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
+	<script src="js/graph.js"></script>
+    <script src="js/angular.min.js"></script>
+</body>
+
+
+</html>

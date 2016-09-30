@@ -1,5 +1,6 @@
-function dataCtrl($scope,$http) {
-	
+var angApp = angular.module('angApp', []);
+
+angApp.controller('dataCtrl', function($scope, $http) {
 	//AJAX request to get data from database
 	var url = "data.json";
 	$http.get(url).success( function(resp) {
@@ -10,6 +11,9 @@ function dataCtrl($scope,$http) {
 			app : $scope.data[0].title,
 			date : $scope.data[0].stats[0].date
 		}
+		//Set default header option values
+		$scope.appSelect = $scope.data[0];
+
 		$scope.updateData();
 	});
 
@@ -66,11 +70,17 @@ function dataCtrl($scope,$http) {
 				}
 			}
 		}
-		//Get available dates for data
+		//Get available dates for data and put correct date in header option
 		$scope.dropdownDates = [];
-		for (var i = 0; i < $scope.data[0].stats.length - 8; i++) {
-			$scope.dropdownDates.push({value: $scope.data[0].stats[i].date + ' - ' + $scope.data[0].stats[i + 8].date});
+		for(var i = 0; i < $scope.data[0].stats.length - 8; i++) {
+			$scope.dropdownDates.push($scope.data[0].stats[i].date + ' - ' + $scope.data[0].stats[i + 8].date);
 		}
+		for(i in $scope.dropdownDates) {
+			if ($scope.dropdownDates[i].substr(0, 8) === $scope.selected.date) {
+				$scope.dateSelect = $scope.dropdownDates[i];
+				break;
+			}
+		}	
 	}
 
 	//Set positon of info popups based on points' graph position
@@ -109,4 +119,4 @@ function dataCtrl($scope,$http) {
 
 		return str; 
 	}
-}
+});

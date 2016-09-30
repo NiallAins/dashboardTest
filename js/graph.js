@@ -24,7 +24,7 @@ function drawGraph(stats) {
 			ctx.setLineDash([4, 3]);
 			for (var i = 28; i < 300; i += 88) {
 				ctx.moveTo(20, i);
-				ctx.lineTo(920, i);
+				ctx.lineTo(916, i);
 			}
 		ctx.stroke();
 		ctx.restore();

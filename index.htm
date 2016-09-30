@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 </head>
 
-<body ng-app="" ng-controller="dataCtrl">
+<body ng-app="angApp" ng-controller="dataCtrl">
 
 	<header>
 	<div id="headerControls">
@@ -30,8 +30,8 @@
 
 		<select id="dateSelect"
 				ng-model="dateSelect"
-				ng-options="x.value for x in dropdownDates"
-				ng-change="selected.date = dateSelect.value.substr(0, 8); updateData();">
+				ng-options="x for x in dropdownDates"
+				ng-change="selected.date = dateSelect.substr(0, 8); updateData();">
 		</select>
 		<div class="calenderIcon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
 
@@ -93,9 +93,9 @@
 		</div>
 	</div>
 
-	<script src="js/script.js"></script>
-	<script src="js/graph.js"></script>
     <script src="js/angular.min.js"></script>
+    <script src="js/script.js"></script>
+	<script src="js/graph.js"></script>
 </body>
 
 

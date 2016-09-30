@@ -19,7 +19,7 @@ header {
     position: relative;
     width: 1180px;
     margin: 0 auto;
-    top: 50%;
+    top: 30px;
     transform: translateY(-50%); }
   header button, header select {
     height: 38px;

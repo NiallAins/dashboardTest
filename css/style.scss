@@ -71,6 +71,7 @@ header {
 	#dateSelect {
 		width: 280px;
 		float: right;
+		margin-right: 50px;
 	}
 }
 #container {
@@ -88,7 +89,7 @@ header {
 	span {
 		float: right;
 		display: inline-block;
-		margin-bottom: 71px;
+		margin-bottom: 74px;
 	}
 }
 #graph {
@@ -108,7 +109,7 @@ header {
 		float: right;
 		color: #969B9F;
 		font-size: 12px;
-		padding-right: 20px;
+		padding-right: 25px;
 
 		* {
 			float: left;
@@ -187,13 +188,14 @@ header {
 	}
 }
 #sidebar {
-	width: 160px;
+	width: 180px;
 	float: right;
 	padding: 40px 0 0 0;
 	
 	div {
+		height: 70px;
 		padding: 0 0 5px 15px;
-		margin-top: 60px;
+		margin-top: 62px;
 	}
 
 	div:nth-child(1) {
@@ -207,14 +209,13 @@ header {
 	}
 
 	.summaryData {
-		font-size: 42px;
+		font-size: 46px;
 		font-weight: bolder;
 		color: #5B646D;
 	}
 
 	.summaryLabel {
-		font-size: 20px;
+		font-size: 16px;
 		color: #A7ADBB;
-		line-height: 10px;
 	}
 }
